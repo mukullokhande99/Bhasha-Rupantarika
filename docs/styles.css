@@ -1,56 +1,54 @@
-/* Full black background, with particles */
 body, html {
-    margin: 0;
-    padding: 0;
+    margin: 0; padding: 0;
     height: 100%;
     background-color: black;
-    overflow: hidden;
-    font-family: Arial, sans-serif;
     color: gold;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 
-/* Particle.js container covers whole viewport */
 #particles-js {
     position: fixed;
+    top: 0; left: 0;
     width: 100%;
     height: 100%;
     z-index: 0;
 }
 
-/* Content on top of particles */
 .content {
     position: relative;
     z-index: 1;
-    padding: 40px;
     max-width: 960px;
     margin: auto;
+    padding: 40px 20px;
 }
 
 h1 {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
     text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
 }
 
 .authors-list {
-    list-style-type: none;
-    padding-left: 0;
+    list-style: none;
+    padding: 0;
     font-size: 1.25rem;
     text-align: center;
 }
 
 .authors-list li {
-    margin: 0.7rem 0;
+    margin: 0.75rem 0;
 }
 
 .authors-list a {
     color: gold;
-    text-decoration: none;
     font-weight: bold;
+    text-decoration: none;
 }
 
-/* Hover effect on author links */
-.authors-list a:hover, .authors-list a:focus {
+.authors-list a:hover,
+.authors-list a:focus {
     text-decoration: underline;
-    color: #ffd700cc; /* brighter gold on hover */
+    color: #ffd700cc;
 }
