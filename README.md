@@ -14,7 +14,7 @@
 </p>
 
 <!-- Add your project banner/architecture image here -->
-![Results from quantized INT4 model](images/architecture.png)
+![Results from quantized INT4 model](images/git_nlp.png)
 
 ## 🚀 Overview
 
