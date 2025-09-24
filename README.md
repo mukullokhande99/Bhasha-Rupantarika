@@ -28,6 +28,15 @@ Bhasha-Rupantarika is a comprehensive research project that explores **algorithm
 - 📱 **Edge Deployment**: Efficient inference on resource-constrained devices
 - 🔬 **Research-Grade Implementation**: Comprehensive evaluation and benchmarking
 
+  <table>
+  <tr>
+    <td><img src="images/img1.jpeg" width="300" alt="Image 1"></td>
+    <td><img src="images/img3.jpeg" width="300" alt="Image 2"></td>
+    <td><img src="images/img2.jpeg" width="300" alt="Image 3"></td>
+  </tr>
+</table>
+
+
 ## 📊 Performance Highlights
 
 | Metric | Achievement |
@@ -53,6 +62,9 @@ git clone https://github.com/mukullokhande99/Bhasha-Rupantarika.git
 cd Bhasha-Rupantarika
 pip install -r requirements.txt
 ```
+### For Specific Language
+Every supported language by nllb-200. Language code is provided for reference.
+[Language code list](nllb_languages.pdf) 
 
 ## 📊 Hardware Requirements
 
