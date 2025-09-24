@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bhasha-Rupantarika</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: black;
+      --text: #1e293b;
+      --max-width: 900px;
+      --radius: 14px;
+      --shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 40px 20px;
+      line-height: 1.7;
+      display: flex;
+      justify-content: center;
+    }
+
+    main.paper {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 40px 36px;
+      max-width: var(--max-width);
+      width: 100%;
+    }
+
+    header.doc-title {
+      text-align: center;
+      margin-bottom: 28px;
+      padding-bottom: 14px;
+      border-bottom: 2px solid #e5e7eb;
+    }
+
+    header.doc-title h1 {
+      font-family: "Merriweather", serif;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--accent);
+    }
+
+    section h3 {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--muted);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      font-size: 16px;
+      color: var(--text);
+    }
+
+    p strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    figure {
+      text-align: center;
+      margin: 28px 0;
+    }
+
+    figure img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      main.paper {
+        padding: 24px 18px;
+      }
+      header.doc-title h1 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main id="content" class="paper">
+    <header class="doc-title">
+      <h1>Bhasha-Rupantarika: Algorithm-Hardware Co-design Approach <br>
+          For Multi-lingual Neural Machine Translation</h1>
+    </header>
+      
+    <section>
+      <h3>
+        Tanushree Dewangan∗, Mukul Lokhande∗, Tejas Chaudhari∗, Mohd Sharik Mansoori∗,
+        <br>Adam Teman§, Senior Member, IEEE, Damayanti Lokhande, Santosh Kumar Vishvakarma∗, Senior Member, IEEE.  
+        <br><br>
+        ∗NSDCS Research Group, Dept. of Electrical Engineering, Indian Institute of Technology Indore, India.  
+        <br>
+        §EnICS Labs, Faculty of Engineering, Bar Ilan University, Ramat Gan 5290002, Israel.
+      </h3>
+      
+      <figure>
+        <img src="https://res.cloudinary.com/dmftopa40/image/upload/v1758127684/image_page-0001_d8xqr8.jpg" alt="paper illustration">
+      </figure>
+      
+      <p>This work proposes <strong>Bhasha-Rupantarika</strong>, an <strong>algorithm-hardware co-design approach</strong> for multi-lingual neural machine translation. The framework leverages a <strong>dual-direction NLLB (No Language Left Behind) model</strong> to enable translation between Indian and overseas languages using a <strong>single unified model</strong>.</p>
+
+      <p>The design supports <strong>adaptive precision processing</strong> with <strong>INT4/FP4, FP8, and BF16</strong> formats, enabled through <strong>reconfigurable hardware</strong> for resource-efficient implementation. This adaptability allows the system to dynamically balance accuracy and efficiency, making it well-suited for natural language processing workloads under diverse hardware constraints.</p>
+
+      <p>To ensure transparency and reproducibility, the <strong>complete codebase and experimental results</strong> are released publicly, empowering designers and researchers to readily adopt, extend, and build upon this work.</p>
+    </section>
+  </main>
+</body>
+</html>
+
