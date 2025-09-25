@@ -13,8 +13,6 @@
   </a>
 </p>
 
-![Output from model for INT4 quantized version](images/nlp_backpng.png)
-
   
 
 
