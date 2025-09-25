@@ -13,8 +13,15 @@
   </a>
 </p>
 
-<!-- Add your project banner/architecture image here -->
-![Results from quantized INT4 model](images/git_nlp.png)
+<picture>
+  <!-- Dark mode image -->
+  <source media="(prefers-color-scheme: dark)" srcset="images/git_nlp.png">
+  <!-- Light mode image -->
+  <source media="(prefers-color-scheme: light)" srcset="images/nlp_backpng.png">
+  <!-- Fallback for systems that don't support prefers-color-scheme -->
+  <img alt="Project logo" src="images/nlp_backpng.png">
+</picture>
+
 
 ## 🚀 Overview
 
