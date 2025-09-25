@@ -13,14 +13,9 @@
   </a>
 </p>
 
-<picture>
-  <!-- Dark mode image -->
-  <source media="(prefers-color-scheme: dark)" srcset="images/git_nlp.png">
-  <!-- Light mode image -->
-  <source media="(prefers-color-scheme: light)" srcset="images/nlp_backpng.png">
-  <!-- Fallback for systems that don't support prefers-color-scheme -->
-  <img alt="Project logo" src="images/nlp_backpng.png">
-</picture>
+![Output from model for INT4 quantized version](images/nlp_backpng.png)
+
+  
 
 
 ## 🚀 Overview
