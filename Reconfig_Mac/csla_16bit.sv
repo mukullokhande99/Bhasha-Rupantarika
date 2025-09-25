@@ -51,7 +51,7 @@ module csla_16bit(
         .B(b_low),
         .addsub(addsub),
         .Cin(Cin),
-        .S(s_low),
+        .sum(s_low),
         .Cout(c_low)
         );
     
@@ -61,7 +61,7 @@ module csla_16bit(
         .B(b_high),
         .addsub(addsub),
         .Cin(1'b0),
-        .S(s_high0),
+        .sum(s_high0),
         .Cout(c_high0)
         );
     
@@ -71,7 +71,7 @@ module csla_16bit(
         .B(b_high),
         .addsub(addsub),
         .Cin(1'b1),
-        .S(s_high1),
+        .sum(s_high1),
         .Cout(c_high1)
         );
 endmodule
