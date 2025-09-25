@@ -38,7 +38,7 @@ module decoder(
                     b42 = B[3:0];
                     e4 = 1'b0;
 
-                    assign exp0 = A[14:7] + B[14:7] - 8'd127;
+                    exp0 = A[14:7] + B[14:7] - 8'd127;
                     s1 = A[15] ^ B[15];   //final sign , no accumulation would be done later
                                         
                     b51 = exp0[7:4];
@@ -67,9 +67,9 @@ module decoder(
                     b32 = {1'b1,B[2:0]};
                     e3 = 1'b0;
                     
-                    assign exp1 = A[22:19] + B[22:19] - 4'd7;    //need to instantiate 4 bit adder with overflow control and inputs depending on the mode control signal
-                    assign exp2 = A[14:11] + B[14:11] - 4'd7;
-                    assign exp3 = A[6:3] + B[6:3] - 4'd7;
+                    exp1 = A[22:19] + B[22:19] - 4'd7;    //need to instantiate 4 bit adder with overflow control and inputs depending on the mode control signal
+                    exp2 = A[14:11] + B[14:11] - 4'd7;
+                    exp3 = A[6:3] + B[6:3] - 4'd7;
                     
                     s1 = A[23] ^ B[23];           //acc according to sign of multiplication
                     s2 = A[15] ^ B[15];
@@ -92,12 +92,12 @@ module decoder(
             
             else if (mode == 2'b10)
                 begin
-                    assign exp1 = {1'b0,A[22:20]} + {1'b0,B[22:20]} - 4'd3;
-                    assign exp2 = {1'b0,A[18:16]} + {1'b0,B[18:16]} - 4'd3;
-                    assign exp3 = {1'b0,A[14:12]} + {1'b0,B[14:12]} - 4'd3;
-                    assign exp4 = {1'b0,A[10:8]} + {1'b0,B[10:8]} - 4'd3;
-                    assign exp5 = {1'b0,A[6:4]} + {1'b0,B[6:4]} - 4'd3;
-                    assign exp6 = {1'b0,A[2:0]} + {1'b0,B[2:0]} - 4'd3;
+                    exp1 = {1'b0,A[22:20]} + {1'b0,B[22:20]} - 4'd3;
+                    exp2 = {1'b0,A[18:16]} + {1'b0,B[18:16]} - 4'd3;
+                    exp3 = {1'b0,A[14:12]} + {1'b0,B[14:12]} - 4'd3;
+                    exp4 = {1'b0,A[10:8]} + {1'b0,B[10:8]} - 4'd3;
+                    exp5 = {1'b0,A[6:4]} + {1'b0,B[6:4]} - 4'd3;
+                    exp6 = {1'b0,A[2:0]} + {1'b0,B[2:0]} - 4'd3;
                     
                     s1 = A[23] ^ B[23];
                     s2 = A[19] ^ B[19]; 
