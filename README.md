@@ -47,7 +47,7 @@ Bhasha-Rupantarika is a comprehensive research project that explores **algorithm
 | **Memory Efficiency** | 75% reduction in GPU memory usage |
 | **Supported Languages** | 200+ language pairs via NLLB-200 |
 
-![Performance table]("images/nllb-200-600m.jpg")
+<img src="images/nllb-200-600m.jpg" width="480" >
 
 ## 🛠️ Installation & Setup
 
